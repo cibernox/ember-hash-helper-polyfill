@@ -9,7 +9,7 @@ module.exports = {
     this._super.init && this._super.init.apply(this, arguments);
 
     var checker = new VersionChecker(this);
-    this._checkerForEmber = checker.for('ember', 'bower');
+    this._checkerForEmber = checker.forEmber();
   },
 
   treeFor: function() {
